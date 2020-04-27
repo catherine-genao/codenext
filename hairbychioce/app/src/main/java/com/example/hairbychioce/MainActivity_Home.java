@@ -4,14 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity_Home extends AppCompatActivity {
     ImageView logo;
-    Button straight ;
-    Button wavy;
-    Button  curly;
-    Button kinky;
+    ImageButton straight ;
+    ImageButton wavy;
+    ImageButton curly;
+    ImageButton kinky;
 
 
     @Override
@@ -26,5 +27,10 @@ public class MainActivity_Home extends AppCompatActivity {
         kinky = findViewById(R.id.kinky);
 
          logo.setImageResource(R.drawable.logo);
+       wavy.setImageResource(R.drawable.wavy);
+       straight.setImageResource(R.drawable.straight);
+       curly.setImageResource(R.drawable.curly);
+      kinky.setImageResource(R.drawable.kinky);
+
     }
 }

@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity_Welcome_Page extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity_Welcome_Page extends AppCompatActivity {
     TextView welcome;
     TextView nameDisplay;
     TextView ageDisplay;
+    ImageView view2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,8 @@ public class MainActivity_Welcome_Page extends AppCompatActivity {
 
         background = findViewById(R.id.background);
     welcome = findViewById(R.id.welcome);
+    view2 = findViewById(R.id.view2);
+    view2.setImageResource(R.drawable.hands);
 
     background.setOnClickListener(new View.OnClickListener() {
         @Override

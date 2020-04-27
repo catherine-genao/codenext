@@ -7,13 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button nxtBtn;
     EditText name;
     EditText age;
-
+    ImageView logo2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         nxtBtn = findViewById(R.id.nxtBtn);
         name = findViewById(R.id.nameET);
         age = findViewById(R.id.ageET);
+        logo2 = findViewById(R.id.logo2);
+
+        logo2.setImageResource(R.drawable.logo);
+
+
+
 
         nxtBtn.setOnClickListener(new View.OnClickListener() {
             @Override
